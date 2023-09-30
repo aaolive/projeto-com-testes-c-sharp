@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Calculadora", "Calculadora\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalculadoraTestes", "CalculadoraTestes\CalculadoraTestes.csproj", "{00E56C1E-BDC8-48A8-8789-607D0D72A7CE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StringsTestes", "StringsTestes\StringsTestes.csproj", "{B8F26987-045E-4D99-9884-A0F1362D5646}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -24,5 +26,9 @@ Global
 		{00E56C1E-BDC8-48A8-8789-607D0D72A7CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{00E56C1E-BDC8-48A8-8789-607D0D72A7CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{00E56C1E-BDC8-48A8-8789-607D0D72A7CE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B8F26987-045E-4D99-9884-A0F1362D5646}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B8F26987-045E-4D99-9884-A0F1362D5646}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B8F26987-045E-4D99-9884-A0F1362D5646}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B8F26987-045E-4D99-9884-A0F1362D5646}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
