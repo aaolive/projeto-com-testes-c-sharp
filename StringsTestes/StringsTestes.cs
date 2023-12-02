@@ -14,7 +14,7 @@ namespace StringsTestes
         [Fact]
         public void ContaO_TextoBomDia_DeveRetornar6caracteres()
         {
-            //arrange: valores para testar
+            //arrange: valores para testar  
             string texto = "BomDia";
 
             // act: faz o teste na classe que tem o codigo que será testado

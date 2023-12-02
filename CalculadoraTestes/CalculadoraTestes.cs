@@ -1,3 +1,4 @@
+using System.Runtime.Intrinsics.Arm;
 using Calculadora.Services;
 
 namespace CalculadoraTestes;
@@ -44,5 +45,45 @@ public class CalculadoraTestes
         // assert
         Assert.Equal(5, resultadoSubtracao);
 
+    }
+
+    [Fact]
+    public void TestaMetodoQueDizSeUmNumeroEhPar()
+    {
+        // arrange
+        var numero = 2;
+        // act
+        bool resultadoDoTesteParOuNao = calculadora.ehPar(numero);
+        // assert
+        Assert.True(resultadoDoTesteParOuNao);
+    }
+
+    /*
+    Devemos usar [Theory] para e [InlineData(valor)] para testar varias vezes
+    */
+    [Theory]
+    [InlineData(2)]
+    [InlineData(6)]
+    [InlineData(10)]
+    [InlineData(202)]
+    [InlineData(176)]
+    [InlineData(80)]
+    public void TestaSeVariosNumerosSaoPares(int numero){
+
+        // act
+        bool resultadoDosNumerosDoTesteParOuNao=calculadora.ehPar(numero);
+        //assert
+        Assert.True(resultadoDosNumerosDoTesteParOuNao);
+
+    }
+
+    /*
+    Usando Assert.All() para testar varios casos sem usar [InlineData(valor)]
+    */
+    [Theory]
+    [InlineData(new int[]{12,14,100})]
+    public void TestaSeVariosNumerosSaoParesComArray(int[] numeros){
+        // para isso usar Assert.All()
+        Assert.All(numeros, num => Assert.True(calculadora.ehPar(num)));
     }
 }
